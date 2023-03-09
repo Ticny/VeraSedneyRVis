@@ -1,10 +1,9 @@
 ---
-title: "<center>T3_Visualizacion<center>"
-author: "<center>Vera Sedney<center>"
-date: "<center>2023-03-07<center>"
-output: 
-  html_document:
-    Warning: false
+title: "<center>T3_Visualizacion</center>"
+author: "<center>Vera Sedney</center>"
+date: "<center>2023-03-07</center>"
+output: html_document
+    
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +15,6 @@ knitr::opts_chunk$set(echo = TRUE)
 Librerias utilizadas:
 
 ```{r}
-suppressPackageStartupMessages(library(ggplot2))
 options(warn = -1)
 library(ggplot2) 
 library(ggpubr) 
@@ -96,7 +94,7 @@ ggsave(filename="Grafica1.png", height= 14, width = 14,
 ```
 
 Resultado: 
-```{r}
+```{r, fig.width=10, fig.height=10, out.width="100%"}
 Grafica1
 ```
 
@@ -151,6 +149,6 @@ ggsave(filename="Grafica2.png", height= 14, width = 14,
 ```
 
 Resultado:
-```{r}
+```{r, fig.width=10, fig.height=10, out.width="100%"}
 Grafica2
 ```
